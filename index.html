@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="canonical" href="/">
 
-     <!-- 倒计时 -->
-	 <script language="javascript" type="text/javascript">
+    <!-- 倒计时 -->
+	<script language="javascript" type="text/javascript">
 	 	// Set the date we're counting down to
 	 	 var countDownDate = new Date("June 7, 2024 08:00:00").getTime();
 	 	 // Update the count down every 1 second
@@ -54,44 +54,37 @@
 	 		 // If the count down is finished, write some text 
 	 		 if (distance < 0) {
 	 			 clearInterval(x);
-	 			 document.getElementById("countdown").innerHTML = "时间已过期";
+	 			 document.getElementById("countdown").innerHTML = "就是今天";
 	 			 }
 	 		}, 1000);
-	 </script>
+	</script>
+	 
+    <!-- umami网站指标分析 -->
+	<script async src="https://analytics.umami.is/script.js" data-website-id="0fec661a-80fc-43ea-99c4-55234c58ebbc"></script>
  
 </head>
 
 
 <body class="half">
+	
+	<main>
+		<div class="half--right half__content">
+			<h1 class="pageTitle">距离高考还有<div id="countdown"></div></h1>
+			
+			<p class="pageContent">
+				<div>吾尝终日而思矣，不如须臾之所学也。吾尝跂而望矣，不如登高之博见也。——《劝学》</div>
+				<br>
+				<div></div>
+			</p>
+		<div>
+			<a href="https://time.is/China" id="time_is_link" rel="nofollow" style="font-size:14px">中国时间:</a>
+			<span id="China_z43d" style="font-size:14px"></span>
+			<script src="//widget.time.is/zh.js"></script>
+			<script>time_is_widget.init({China_z43d:{template:"TIME<br>DATE<br>SUN", time_format:"hours:minutes", date_format:"year-monthnum-daynum dname，第week周", sun_format:"日出: srhour:srminute 日落: sshour:ssminute<br>昼长: dlhours时 dlminutes分", coords:"35.0000000,105.0000000"}});
+			</script>
+		</div>
 
-  <main>
-    <div class="half--right half__content">
-        
-  <h1 class="pageTitle">距离高考还有<div id="countdown"></div></h1>
-  
-
-  
-  <p class="pageContent">
-	  <div>吾尝终日而思矣，不如须臾之所学也；吾尝跂而望矣，不如登高之博见也。——《劝学》</div>
-	  <br>
-	  
-	  <!---中国时间
-	  <div>
-		  <a href="https://time.is/China" id="time_is_link" rel="nofollow" style="font-size:14px">中国时间:</a>
-		  <span id="China_z43d" style="font-size:14px"></span>
-		  <script src="//widget.time.is/zh.js"></script>
-		  <script>
-			  time_is_widget.init({China_z43d:{template:"TIME<br>DATE", date_format:"year-monthnum-daynum dname"}});
-		  </script>
-	  </div>
-	  --->
-	  
-	  <br>
-	  <div>待补充</div>
-  </p>
-
-
-      <!---
+      <!--- 社交软件链接
 	  <div class="socialLinks">
       
 	  <a class="socialLinks__link socialLInk__Netlify" href="https://netlify.com" target="_blank">自豪的由Netlify强力驱动</a>
